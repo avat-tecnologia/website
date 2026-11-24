@@ -60,7 +60,8 @@ h1, h2, h3 { font-weight: 600; letter-spacing: var(--tracking-display); line-hei
 
 /* contact */
 .contact { background: var(--color-paper-2); }
-.contact .container { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: var(--space-3xl); align-items: start; }
+.contact .container { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: var(--space-3xl); align-items: center; }
+.contact .actions { display: flex; gap: var(--space-md); flex-wrap: wrap; }
 .contact h2 { font-size: var(--text-display-s); max-width: 12ch; }
 .contact .lead { color: var(--color-ink-2); font-size: var(--text-lead); margin-top: var(--space-lg); }
 form { display: grid; gap: var(--space-md); }
