@@ -28,7 +28,7 @@ h1, h2, h3 { font-weight: 600; letter-spacing: var(--tracking-display); line-hei
 
 /* hero */
 .hero { position: relative; overflow: clip; min-height: min(calc(100svh - 72px), 760px); display: grid; align-items: center; background: var(--color-paper); }
-.hero .container { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--space-3xl); align-items: center; padding-block: var(--space-2xl); }
+.hero .container { padding-block: var(--space-2xl); }
 .hero h1 { font-size: var(--text-display); max-width: 14ch; }
 .hero p { font-size: var(--text-lead); color: var(--color-ink-2); margin-top: var(--space-lg); max-width: 34ch; }
 .hero .actions { display: flex; gap: var(--space-md); margin-top: var(--space-xl); flex-wrap: wrap; }
@@ -102,18 +102,6 @@ textarea { min-height: 120px; resize: vertical; }
 .row:hover .chip { background: var(--color-accent); color: var(--color-accent-ink); }
 .step .chip { margin-bottom: var(--space-lg); }
 .section.alt { background: var(--color-paper-2); }
-
-/* hero chat */
-.chat { margin: 0; display: grid; gap: var(--space-sm); padding: var(--space-lg); background: var(--color-paper-2); border: var(--rule-hair) solid var(--color-rule); border-radius: var(--radius-card); }
-.chat-head { display: flex; align-items: center; gap: var(--space-md); padding-bottom: var(--space-md); border-bottom: var(--rule-hair) solid var(--color-rule); margin-bottom: var(--space-xs); }
-.chat-head div { display: grid; }
-.chat-head span:not(.chip) { font-size: var(--text-xs); color: var(--color-muted); }
-.bubble { max-width: 85%; padding: var(--space-sm) var(--space-md); border-radius: var(--radius-card); font-size: var(--text-md); animation: rise 600ms var(--ease-out) both; }
-.bubble.bot { background: var(--color-paper-3); color: var(--color-ink); }
-.bubble.you { justify-self: end; background: var(--color-accent); color: var(--color-accent-ink); font-weight: 700; animation-delay: 350ms; }
-.bubble.bot:nth-of-type(3) { animation-delay: 700ms; }
-.lead-tag { display: flex; align-items: center; gap: var(--space-xs); justify-self: start; margin-top: var(--space-xs); padding: var(--space-xs) var(--space-md); border: 1px solid var(--color-support); border-radius: var(--radius-pill); color: var(--color-support); font-size: var(--text-sm); animation: rise 600ms var(--ease-out) 1050ms both; }
-@keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
 
 /* footer v2 */
 .footer { background: var(--color-paper-2); padding-block: var(--space-3xl) var(--space-xl); }
