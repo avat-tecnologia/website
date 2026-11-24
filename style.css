@@ -73,7 +73,7 @@ textarea { min-height: 120px; resize: vertical; }
 
 /* footer */
 .footer { padding-block: var(--space-2xl); border-top: var(--rule-hair) solid var(--color-rule); }
-.footer .container { display: flex; justify-content: space-between; align-items: center; gap: var(--space-lg); flex-wrap: wrap; }
+.footer .container { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--space-lg); flex-wrap: wrap; }
 .footer img { height: 24px; width: auto; }
 .footer p { color: var(--color-muted); font-size: var(--text-sm); }
 
@@ -85,3 +85,8 @@ textarea { min-height: 120px; resize: vertical; }
   .nav-links a:not(.btn) { display: none; }
 }
 @media (max-width: 40rem) { .steps { grid-template-columns: minmax(0, 1fr); } }
+
+.footer .brand { display: grid; gap: var(--space-md); }
+.footer .links { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-sm); color: var(--color-ink-2); font-size: var(--text-sm); }
+.footer .links a { text-decoration: none; transition: color var(--dur-short) var(--ease-out); }
+.footer .links a:hover { color: var(--color-accent); }
